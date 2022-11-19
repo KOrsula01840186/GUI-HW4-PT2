@@ -1,0 +1,65 @@
+<!--Kevin Orsula, kevin_orsula@student.uml.edu-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+    <script src="js/scripts.js"></script> <!--Using .ready()-->
+    <title>KevinOrsula-MultiplicationTable-HW4PT2</title>
+  </head>
+  <body>
+    <h1>Multiplication Table</h1> 
+    <p>Enter an INTEGER between -50 and 50 into each field below.</p>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6"> <!--Bootstrap to make sure the form is always the correct size-->
+            <form id = "forms"> 
+                  <label for="colMin">Column Minimum:</label> <!--Label for each attibute-->
+                  <input type="number" class="formInputs" name="colMin" id="colMin" value="0" > <!--Added a default value of 0, and number type prevents letters from being entered-->
+                  <div id ="slider-colMin"></div> 
+
+                  <label for="colMax">Column Maximum:</label>
+                  <input type="number" class="formInputs" name="colMax" id="colMax" value="0">
+                  <div id ="slider-colMax"></div>
+
+                  <label for="rowMin">Row Minimum:</label>
+                  <input type="number" class="formInputs" name="rowMin" id="rowMin" value="0">
+                  <div id ="slider-rowMin"></div>
+
+                  <label for="rowMax">Row Maximum:</label>
+                  <input type="number" class="formInputs" name="rowMax" id="rowMax" value="0">
+                  <div id ="slider-rowMax"></div>
+                  
+                  <!-- <button id='submitButton' type="button" class="btn btn-primary btn-block">Submit</button> -->
+                  <button id='addButton' type="button" class="btn btn-primary btn-block">Add Current Table To Tabs</button>
+                  <button id='allDelete' type="button" class="btn btn-primary btn-block">Delete All Tables From Tabs</button>
+                </div>
+            </form>         
+        
+          <div class="mx-auto">
+            <div class ="tableContainer">
+                <table class="table table-stripped" id="multTable"></table> <!--Purposely left blank for the javascript to fill-->
+            </div>
+          </div>
+          <br />
+          
+          <div class = col-md-12>
+            <div id="tabs">
+              <ul></ul> <!--Purposely left blank for the javascript to fill-->
+            </div>
+          </div>
+          <br />
+       </div>
+      </div>
+    
+      <script src="js/scripts.js"></script> <!--Using .ready()-->
+  </body>
+</html>

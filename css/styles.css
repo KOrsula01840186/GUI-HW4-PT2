@@ -1,0 +1,89 @@
+/*Kevin Orsula, kevin_orsula@student.uml.edu*/
+h1 { /*Stylizes the header with a blue background, centered, full page*/
+    width: 100%;
+    text-align:center;
+    font-size:50px;
+    padding:25px;
+    background-color:#169edd;
+}
+p { /*Stylizes the paragraph with instructions to be centered*/
+    text-align: center;
+    font-size: 25px;
+}
+label.error{ /*Stylizes the error text*/
+    margin: 5px;
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    
+}
+label {
+    margin-top: 15px;
+}
+form{ /*Borders the form and spaces it correctly*/
+    font-size:18px;
+    padding: 10px;
+    border: 2px solid #169edd;
+    margin-bottom: 20px;
+}
+.formInputs { /*Expands the input areas and centers the text*/
+    text-align: center;
+    margin-top: -5px;
+    width: 100%;
+}
+.tableContainer { /*Makes sure the scroll bars are added and enforces a size for the table*/
+    overflow: auto;
+    max-width: 550px;
+    max-height: 500px;
+}
+#multTable {
+    width: 100%; /*The mult table takes up the full size of the container box*/
+    height: 100%;
+    border: 2px solid black;
+}
+td { /*Formats the tables*/
+    border: 2px solid black;
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+tr:first-child td:first-child { /*Adds all of the coloring to the tables*/
+    background-color: rgb(31, 84, 230);
+}
+tr:first-child td:not(:first-child), td:first-child {
+    background-color: #169edd;
+}
+tr:nth-child(even):not(:first-child) td:nth-child(even):not(:first-child), tr:nth-child(odd):not(:first-child) td:nth-child(odd):not(:first-child) {
+    background-color: #e9e9ed;
+}
+tr:nth-child(even):not(:first-child) td:nth-child(odd):not(:first-child), tr:nth-child(odd):not(:first-child) td:nth-child(even):not(:first-child) {
+    background-color: #b7b7b7;
+}
+#addButton { /*Styles the buttons*/
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 15px;
+    font-size: 20px;
+    background-color: #b7b7b7;
+    border: none;
+    color: black;
+    font-weight: bold;
+    height: 40px;
+}
+#allDelete {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 10px;
+    font-size: 20px;
+    background-color: #b7b7b7;
+    border: none;
+    color: black;
+    font-weight: bold;
+    height: 40px;
+}
+#tabs ul{
+    background:#169edd;
+}  
+.ui-slider{
+    width: auto;
+}   
