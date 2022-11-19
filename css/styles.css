@@ -83,7 +83,22 @@ tr:nth-child(even):not(:first-child) td:nth-child(odd):not(:first-child), tr:nth
 }
 #tabs ul{
     background:#169edd;
-}  
+}
+#tabs .ui-tabs-anchor{
+    color:  black;
+}
+#tabs ul{
+    background:#169edd;
+    margin-bottom: 10px;
+}
 .ui-slider{
     width: auto;
-}   
+}
+.ui-slider .ui-slider-handle {
+    min-width: 20px;
+    min-height: 25px;
+    height: auto;
+    width: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
